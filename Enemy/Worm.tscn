@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Enemy/Worm.gd" type="Script" id=1]
+[ext_resource path="res://Assets/snakeLava.png" type="Texture" id=2]
+[ext_resource path="res://Assets/snakeLava_ani.png" type="Texture" id=3]
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 52, 147 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 53, 147 )
+
+[sub_resource type="SpriteFrames" id=30]
+animations = [ {
+"frames": [ SubResource( 28 ), SubResource( 29 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.5
+} ]
+
+[sub_resource type="CapsuleShape2D" id=31]
+radius = 32.0
+height = 192.0
+
+[node name="Worm" type="KinematicBody2D"]
+position = Vector2( 0, -16 )
+scale = Vector2( 0.5, 1 )
+collision_layer = 0
+collision_mask = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 1.17177, -3.25 )
+scale = Vector2( 1.044, 1.5 )
+frames = SubResource( 30 )
+playing = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -24, -120, 24, -120, 24, 104, -24, 104 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 31 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

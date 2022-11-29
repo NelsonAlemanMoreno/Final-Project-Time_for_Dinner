@@ -1,0 +1,42 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Coins/Coins.gd" type="Script" id=1]
+[ext_resource path="res://Assets/coins/coins1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/coins/coins3.png" type="Texture" id=3]
+[ext_resource path="res://Assets/coins/coins2.png" type="Texture" id=4]
+[ext_resource path="res://Assets/coins/coins4.png" type="Texture" id=5]
+[ext_resource path="res://Assets/coins/gold_collect.wav" type="AudioStream" id=6]
+
+[sub_resource type="SpriteFrames" id=16]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 4.0
+} ]
+
+[sub_resource type="CircleShape2D" id=17]
+radius = 17.0
+
+[node name="Coins_T1" type="Area2D" groups=["Persist"]]
+collision_layer = 0
+collision_mask = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 16 )
+frame = 2
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 17 )
+
+[node name="Collect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = 3.0
+
+[connection signal="body_entered" from="." to="." method="_on_Coins_body_entered"]
