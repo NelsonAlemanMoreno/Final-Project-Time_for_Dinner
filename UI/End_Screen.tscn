@@ -1,0 +1,137 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Assets/Orbitron Medium.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://UI/End_Screen.gd" type="Script" id=2]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+
+uniform vec4 topleft:hint_color = vec4(0.1, 0.44, 0.76, 1.0);
+uniform vec4 topright:hint_color = vec4( 1, 0.498039, 0.313726, 1 );
+uniform vec4 bottomleft:hint_color = vec4( 0.960784, 0.870588, 0.701961, 1 );
+uniform vec4 bottomright:hint_color = vec4( 0, 1, 0.498039, 1 );
+
+void fragment() {
+	vec2 uv_corner = vec3(UV, 0.0).xy;
+	vec4 top = mix(topleft, topright, uv_corner.x);
+	vec4 bottom = mix(bottomleft, bottomright, uv_corner.x);
+	COLOR =  mix(top, bottom, uv_corner.y);
+}
+"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+shader_param/topleft = Color( 0.1, 0.44, 0.76, 1 )
+shader_param/topright = Color( 1, 0.498039, 0.313726, 1 )
+shader_param/bottomleft = Color( 0.960784, 0.870588, 0.701961, 1 )
+shader_param/bottomright = Color( 0, 1, 0.498039, 1 )
+
+[sub_resource type="DynamicFont" id=6]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 20
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 20
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[node name="End_Screen" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="Control" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -100.0
+margin_right = 100.0
+margin_bottom = 100.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+material = SubResource( 2 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -300.0
+margin_right = 512.0
+margin_bottom = 300.0
+
+[node name="Restart" type="Button" parent="Control"]
+modulate = Color( 0.596078, 0.784314, 1, 1 )
+margin_left = -124.0
+margin_top = 40.0
+margin_right = -24.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 6 )
+text = "RESTART"
+
+[node name="Quit" type="Button" parent="Control"]
+modulate = Color( 0.905882, 0.254902, 1, 1 )
+margin_left = 100.0
+margin_top = 40.0
+margin_right = 145.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 7 )
+text = "QUIT"
+
+[node name="Score" type="Label" parent="Control"]
+margin_left = -156.0
+margin_top = -72.0
+margin_right = 36.0
+margin_bottom = -52.0
+custom_fonts/font = SubResource( 3 )
+text = "SCORE: 500"
+
+[node name="Level" type="Label" parent="Control"]
+margin_left = 100.0
+margin_top = -72.0
+margin_right = 140.0
+margin_bottom = -58.0
+custom_fonts/font = SubResource( 4 )
+text = "LEVEL: 5"
+
+[node name="Death" type="Label" parent="Control"]
+margin_left = -28.0
+margin_top = -40.0
+margin_right = 140.0
+margin_bottom = -20.0
+custom_fonts/font = SubResource( 5 )
+text = "DEATHS: 20"
+
+[node name="Thanks" type="Label" parent="Control"]
+margin_left = -220.0
+margin_top = -160.0
+margin_right = 292.0
+margin_bottom = -117.0
+custom_fonts/font = SubResource( 8 )
+text = "Thanks for playing my 2D Platformer! Hopefully you've enjoyed it (or not)!"
+align = 1
+valign = 1
+autowrap = true
+
+[connection signal="pressed" from="Control/Restart" to="." method="_on_Restart_pressed"]
+[connection signal="pressed" from="Control/Quit" to="." method="_on_Quit_pressed"]
