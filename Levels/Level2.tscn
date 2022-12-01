@@ -146,89 +146,24 @@ position = Vector2( 8, -56 )
 script = ExtResource( 1 )
 
 [node name="Enemy2" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 3608, 152 )
-con_left = Vector2( 3608, -312 )
-con_right = Vector2( 3608, 152 )
+position = Vector2( 1872, 600 )
+con_left = Vector2( 664, 600 )
+con_right = Vector2( 1872, 600 )
 
 [node name="Enemy3" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 3291, 301 )
-con_left = Vector2( 3608, -312 )
-con_right = Vector2( 3608, 152 )
+position = Vector2( 664, 600 )
+con_left = Vector2( 664, 600 )
+con_right = Vector2( 1872, 600 )
 
 [node name="Enemy4" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 2945, 288 )
-con_left = Vector2( 3608, -312 )
-con_right = Vector2( 3608, 152 )
+position = Vector2( 2648, 600 )
+con_left = Vector2( 1945, 600 )
+con_right = Vector2( 2648, 600 )
 
 [node name="Enemy5" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 2697, 307 )
-con_left = Vector2( 3608, -312 )
-con_right = Vector2( 3608, 152 )
-
-[node name="Enemy6" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 2230, 212 )
-con_left = Vector2( 3608, -312 )
-con_right = Vector2( 3608, 152 )
-
-[node name="Enemy7" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 2117, -349 )
-con_left = Vector2( 3608, -312 )
-con_right = Vector2( 3608, 152 )
-
-[node name="Enemy8" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 1748, -197 )
-con_left = Vector2( 3608, -312 )
-con_right = Vector2( 3608, 152 )
-
-[node name="Enemy10" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 1691, 209 )
-con_left = Vector2( 3608, -312 )
-con_right = Vector2( 3608, 152 )
-
-[node name="Enemy11" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 1811, 380 )
-con_left = Vector2( 3608, -312 )
-con_right = Vector2( 3608, 152 )
-
-[node name="Enemy12" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 593, -105 )
-con_left = Vector2( 3608, -312 )
-con_right = Vector2( 3608, 152 )
-
-[node name="Enemy9" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 1621, -29 )
-con_left = Vector2( 3608, -312 )
-con_right = Vector2( 3608, 152 )
-
-[node name="Enemy14" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 842, 338 )
-
-[node name="Enemy15" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 318, 167 )
-
-[node name="Enemy16" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 729, -408 )
-
-[node name="Enemy17" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 1538, -447 )
-
-[node name="Enemy18" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 2350, -459 )
-
-[node name="Enemy19" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 2431, -126 )
-
-[node name="Enemy20" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 1886, -33 )
-
-[node name="Enemy21" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 2929, -12 )
-
-[node name="Enemy22" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 3067, -351 )
-
-[node name="Enemy23" parent="Enemy_Container" instance=ExtResource( 11 )]
-position = Vector2( 3178, 104 )
+position = Vector2( 2072, 600 )
+con_left = Vector2( 344, -409 )
+con_right = Vector2( 2072, 600 )
 
 [node name="Camera" type="Camera2D" parent="."]
 current = true
