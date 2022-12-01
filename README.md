@@ -30,4 +30,4 @@ List of group members (and contributions)
 ## Created by 
 
 Kelly Dong, Davionte' Thornton (LEVEL 2, music, assets)
-Alexander Lefevre
+Alexander Lefevre (Level 1, part of levek 2, readme)
