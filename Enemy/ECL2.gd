@@ -1,7 +1,6 @@
 extends Node2D
 
 onready var Enemy1 = load("res://Enemy/Enemy1.tscn")
-onready var Turret = load("res://Enemy/Turret.tscn")
 
 func _physics_process(_delta):
 	if not has_node("Enemy1"):
