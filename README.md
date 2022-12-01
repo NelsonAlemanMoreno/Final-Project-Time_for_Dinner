@@ -52,4 +52,4 @@ None
 
 ## Created by 
 
-Kelly Dong
+Kelly Dong, Davionte' Thornton (LEVEL 2, music, assets)
