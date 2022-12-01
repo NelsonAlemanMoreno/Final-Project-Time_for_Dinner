@@ -8,9 +8,4 @@ func _physics_process(_delta):
 		var enemy1 = Enemy1.instance()
 		enemy1.name = "Enemy1"
 		add_child(enemy1)
-	if not has_node("Turret"):
-		var turret = Turret.instance()
-		turret.name = "Turret"
-		turret.rotation = PI
-		turret.position = Vector2(3416, -296)
-		add_child(turret)
+	
