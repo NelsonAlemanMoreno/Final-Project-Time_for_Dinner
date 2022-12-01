@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Enemy/Enemy2.gd" type="Script" id=1]
-[ext_resource path="res://Assets/patroller.png" type="Texture" id=2]
+[ext_resource path="res://Assets/TFD/imhungry.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=16]
 extents = Vector2( 26, 35 )
@@ -18,6 +18,7 @@ con_left = Vector2( 344, 544 )
 con_right = Vector2( 912, 544 )
 
 [node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
