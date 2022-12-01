@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Enemy/ECL2.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://UI/UI.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Enemy/Enemy2.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Assets/park.jpg" type="Texture" id=12]
+[ext_resource path="res://Assets/lifelike-126735.mp3" type="AudioStream" id=13]
 
 [sub_resource type="NavigationPolygon" id=13]
 vertices = PoolVector2Array( 2048, 128, 2048, 192, 1984, 192, 1984, 128, 2176, 128, 2240, 128, 2240, 192, 2176, 192, 3712, 576, 3392, 576, 3392, 568, 3712, -640, 1472, 192, 2432, 320, 2304, 320, 1280, 256, 1408, 192, 1728, 0, 1728, -64, 3136, -128, 3328, -128, 2176, 64, 2048, 64, 2880, 384, 2816, 384, 1856, 192, 1984, 64, 1280, 192, 1408, 128, 2560, 512, 2560, 448, 2752, 448, 2688, 512, 1856, 64, 1088, 192, 1088, 128, 1216, 192, 1792, 384, 1792, 320, 2240, 384, 1536, 320, 1536, 384, 896, 320, 1216, 256, 896, 192, 1024, 192, 3392, -192, 64, -640, 3136, -192, 1472, -64, 1472, 0, 1024, 0, 1024, -64, 3328, 568, 3328, 576, 3008, 576, 3008, 512, 2944, 448, 2944, 512, 2880, 448, 1856, 128, 2816, 448, 2496, 448, 2496, 384, 2432, 384, 704, 192, 640, 192, 640, 64, 768, 0, 576, 64, 576, 192, 512, 192, 512, 320, 576, 320, 576, 448, 320, 384, 1472, 576, 1088, 576, 640, 448, 640, 320, 704, 320, 2304, 384, 2240, 448, 2176, 448, 2752, 512, 2688, 576, 2048, 576, 2176, 512, 2048, 512, 1984, 512, 1984, 448, 1920, 448, 1920, 512, 1856, 512, 1856, 576, 64, 576, 64, 384, 320, 320, 64, 320, 768, -64, 1024, 128, 768, 192, 1792, 128, 1792, 192, 1472, 128, 768, 320 )
@@ -664,3 +665,6 @@ rect_pivot_offset = Vector2( 599, 245 )
 texture = ExtResource( 12 )
 expand = true
 stretch_mode = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 13 )
