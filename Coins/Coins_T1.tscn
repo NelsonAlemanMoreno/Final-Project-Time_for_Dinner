@@ -29,11 +29,15 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 16 )
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 frame = 2
 =======
 frame = 3
 >>>>>>> 62c9ade5a8d87dcc1dec67077eeddadcf13033c2
+=======
+frame = 2
+>>>>>>> Stashed changes
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
