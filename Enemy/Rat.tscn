@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Enemy/Rat.gd" type="Script" id=1]
+[ext_resource path="res://Assets/new assets/rat.png" type="Texture" id=2]
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 32, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 64, 32, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=20]
+animations = [ {
+"frames": [ SubResource( 17 ), SubResource( 18 ), SubResource( 19 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=16]
+extents = Vector2( 16.5, 11.5 )
+
+[node name="Rat" type="KinematicBody2D"]
+scale = Vector2( 0.65, 0.65 )
+collision_layer = 0
+collision_mask = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 20 )
+frame = 2
+playing = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -0.5, 6.5 )
+shape = SubResource( 16 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -3, 0 )
+scale = Vector2( 0.419922, 0.491071 )
+polygon = PoolVector2Array( -31, -9, -32, 33, 42.8651, 32.5818, 42.8651, -8.14545 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

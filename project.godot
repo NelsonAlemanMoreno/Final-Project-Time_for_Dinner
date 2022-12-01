@@ -14,7 +14,9 @@ _global_script_class_icons={
 
 [application]
 
-config/name="04-2D-Platformer"
+
+config/name="Time-For-Dinner"
+
 run/main_scene="res://Levels/Level1.tscn"
 config/icon="res://icon.png"
 
