@@ -4,7 +4,7 @@ onready var water = 22
 
 func _ready():
 	if not $Tween.is_active():
-		$Tween.interpolate_property(self, "position.y", position.y, 0, 25, Tween.TRANS_EXPO, Tween.EASE_IN)
+		$Tween.interpolate_property(self, "position.y", position.y, 50, 5, Tween.TRANS_EXPO, Tween.EASE_IN)
 		$Tween.start()
 
 
