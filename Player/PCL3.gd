@@ -14,8 +14,8 @@ func _physics_process(_delta):
 
 
 func properties(player):
-	player.scale.x = 0.4
-	player.scale.y = 0.4
+	player.scale.x = 0.3
+	player.scale.y = 0.3
 	player.position = starting_position
 	player.name = "Player"
 	

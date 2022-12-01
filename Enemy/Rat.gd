@@ -3,6 +3,7 @@ extends KinematicBody2D
 export var con_left = Vector2(0, 0)
 export var con_right = Vector2(100, 0)
 export var speed = 3
+var value = 15
 
 func _ready():
 	pass
@@ -20,3 +21,6 @@ func _physics_process(_delta):
 func _on_Area2D_body_entered(body):
 	if body.name == "Player":
 		body.die()
+	elif body.name == "Bullet":
+		Global.plus_score(value)
+		queue_free()
