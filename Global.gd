@@ -4,7 +4,7 @@ var levels = 1
 var death_zone = 740
 var score = 0
 var time = 0
-var level_time = [60, 90, 120, 75, 90]
+var level_time = [60, 90, 120, 75]
 var deaths = 0
 
 
