@@ -431,7 +431,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 17/shapes = [  ]
 17/z_index = 0
 
-[node name="Game" type="Node2D"]
+[node name="Game2" type="Node2D"]
 
 [node name="Nav2D" type="Navigation2D" parent="."]
 

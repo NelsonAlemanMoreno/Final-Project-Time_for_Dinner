@@ -445,7 +445,6 @@ con_left = Vector2( 3608, -312 )
 con_right = Vector2( 3608, 152 )
 
 [node name="Camera" type="Camera2D" parent="."]
-current = true
 limit_left = 0
 limit_top = -700
 limit_right = 3776
