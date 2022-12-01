@@ -1,4 +1,4 @@
-extends Area2D
+dextends Area2D
 
 export var con_left = Vector2(0, 0)
 export var con_right = Vector2(0, 0)

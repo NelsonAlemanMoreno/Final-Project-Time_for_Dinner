@@ -104,7 +104,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=16]
-extents = Vector2( 8, 23 )
+extents = Vector2( 9, 24 )
 
 [node name="Player" type="KinematicBody2D" groups=["Player"]]
 position = Vector2( 200, 200 )
@@ -116,7 +116,7 @@ animation = "Idle"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 5 )
+position = Vector2( -1, 6 )
 shape = SubResource( 16 )
 
 [node name="Floor" type="Node2D" parent="."]

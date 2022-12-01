@@ -1,9 +1,7 @@
 extends Node2D
 
 onready var Player = load("res://Player/Player.tscn")
-var starting_position = Vector2(200,200)
-var first_time = true
-var door2 = true
+var starting_position = Vector2(54,36)
 
 func _ready():
 	pass
@@ -11,20 +9,23 @@ func _ready():
 func _physics_process(_delta):
 	if not has_node("Player"):
 		var player = Player.instance()
-		player.position = starting_position
-		player.name = "Player"
+		player_properties(player)
 		add_child(player)
 
+func player_properties(player):
+	
+	player.scale.x = 0.5
+	player.scale.y = 0.5
+	player.position = starting_position
+	player.name = "Player"
+	
+	player.gravity = Vector2(0, 20)
+	
+	player.move_speed = 15
+	player.max_move = 200
+	
+	player.jump_speed = 150
+	player.max_jump = 450
 
-func _on_Door1_body_entered(body):
-	if body.name == "Player" and first_time:
-		starting_position = Vector2(3488, -768)
-		Global.time += 30
-		first_time = false
-
-
-func _on_Door2_body_entered(body):
-	if body.name == "Player" and door2:
-		starting_position = Vector2(160, -1472)
-		Global.time += 20
-		door2 = false
+	player.leap_speed = 150
+	player.max_leap = 450
