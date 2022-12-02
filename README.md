@@ -23,12 +23,16 @@ Two new point systems in the form of Hot dogs and drumsticks
 Assets, or resources used
 
 ## References
-https://www.kenney.nl/assets/rpg-base
-https://www.kenney.nl/assets/hexagon-tiles
-https://kenney.nl/assets/rpg-urban-pack
+- https://www.kenney.nl/assets/rpg-base
+- https://www.kenney.nl/assets/hexagon-tiles
+- https://kenney.nl/assets/rpg-urban-pack
+- (Level 3 Tileset) https://kingkelp.itch.io/sewer-tileset?download
+- [Rat Sprite Created by Tuomo Untinen (Reemax) & Jordan Irwin (AntumDeluge)](https://opengameart.org/node/82869)
 
 ## Future Development
 none
 
 # Created by: Papa's Pizzaria
 Alexander Lefevre (Level 1, part of level 2, README.md)
+Kelly Dong (Level 3, Global Scripting, Level 3 Specific Features)
+
