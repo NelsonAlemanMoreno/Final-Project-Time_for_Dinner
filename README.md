@@ -26,7 +26,7 @@ Assets, or resources used
 - https://www.kenney.nl/assets/rpg-base
 - https://www.kenney.nl/assets/hexagon-tiles
 - https://kenney.nl/assets/rpg-urban-pack
-- (Level 3 Tileset) https://kingkelp.itch.io/sewer-tileset?download
+- [Level 3 Tileset](https://kingkelp.itch.io/sewer-tileset?download)
 - [Rat Sprite Created by Tuomo Untinen (Reemax) & Jordan Irwin (AntumDeluge)](https://opengameart.org/node/82869)
 
 ## Future Development
