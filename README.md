@@ -1,55 +1,34 @@
-# 2D-Platformer
+# Final-Project-Time_for_Dinner
+MSCH-C220 Game Jam, November 2022
 
-A simple 2D Platformer game that consists of 5 levels that vary from difficulty and style. Contains basic 'WASD' controls and some standard enemies.
+## Theme
+We interpretated the theme through the creation of a 2D platformer game revolving around food.
+
+## Game Play
+Objective is to complete all four levels while collectiong food for maximum points.
+W = Jump
+A = Left
+D = Right
+
+## Impediments
+We deeply stuggled with merging our branhes into a functioning game.
 
 ## Implementation
-
-Built using Godot 3.5
+Features
+We implemented new backgrounds for each level to represent what part of the city you are currently in. 
+We implemented,
+New Character Model
+Two new enemy models (Rat and hungy)
+Two new point systems in the form of Hot dogs and drumsticks
+Assets, or resources used
 
 ## References
-
-The player sprite is adaptated from [MV Platformer Male](https://opengameart.org/content/mv-platformer-male-32x64) by MoikMellah
-
-The warrior sprite sheet is available from [Clembod at itch.io](https://clembod.itch.io/warrior-free-animation-set)
-
-The Knight sprite sheets are available from [OcO at itch.io](https://oco.itch.io/medieval-fantasy-character-pack)
-
-The adventurer sprite sheet is avalable from [rvros at itch.io](https://rvros.itch.io/animated-pixel-hero)
-
-~
-
-TileMap Platform Sprite Sheet - [Scribble Platform TileMap](https://kenney.nl/assets/scribble-platformer)
-
-Alien-alike enemys - [Enemies from Kenney](https://kenney.nl/assets/platformer-art-extended-enemies)
-
-Abstract Platformer - [Abstract Platformer](https://kenney.nl/assets/abstract-platformer)
-
-Portal Animation! - [Portal](https://ruxar.itch.io/portal)
-
-Coins Sprite - [Coins Sprite](https://opengameart.org/content/coins)
-
-Star Background Music - [Star BGM](https://opengameart.org/content/the-farthest-star)
-
-Coin Collection Sound - [Coin Sound](https://opengameart.org/content/plingy-coin)
-
-Turret Sprite - [Turret](https://opengameart.org/content/tower-defence-basic-towers)
-
-Bullet Sprite - [Bullet](https://opengameart.org/content/pixel-bullet)
-
-Cannon Fire Sound Effect - [BOOM](https://opengameart.org/content/cannon-fire)
-
-In Level Portal Warp Sound Effect - [Teleport](https://opengameart.org/content/teleport)
-
-Gear Sprite - (By Me)
-
-Gear Grinding Sound - [SFX](https://pixabay.com/sound-effects/running-gear-6403/)
-
-Parallax Background - [TheDawn Background](https://saurabhkgp.itch.io/the-dawn-parallax-background)
+https://www.kenney.nl/assets/rpg-base
+https://www.kenney.nl/assets/hexagon-tiles
+https://kenney.nl/assets/rpg-urban-pack
 
 ## Future Development
+none
 
-None
-
-## Created by 
-
-Kelly Dong
+# Created by: 
+Alexander Lefevre (Level 1, part of level 2, README.md)
